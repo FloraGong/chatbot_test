@@ -1,0 +1,5 @@
+LangChain
+Gradio
+unstructured
+chromadb
+nltk
