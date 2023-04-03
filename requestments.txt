@@ -1,5 +1,6 @@
 LangChain
-Gradio
+streamlit
+streamlit_chat
 unstructured
 chromadb
 nltk
