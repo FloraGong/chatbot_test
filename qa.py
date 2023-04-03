@@ -84,7 +84,7 @@ if uploaded_file is not None and uploaded_file.name not in os.listdir("data"):
         st_message(**chat)
         
 elif uploaded_file is not None and uploaded_file.name in os.listdir("data"):
-    st.write("File is excied.")
+    st.write("File is existed.")
     loader = DirectoryLoader('data' , glob='**/*.txt')
     documents = loader.load()
 
