@@ -17,7 +17,7 @@ texts = text_splitter.split_documents(documents)
 
 # 获取文档嵌入
 os.environ[
-    'OPENAI_API_KEY'] = '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'
+    'OPENAI_API_KEY'] = '<Your token>'
 embeddings = OpenAIEmbeddings(openai_api_key=os.environ['OPENAI_API_KEY'])
 docsearch = Chroma.from_documents(texts, embeddings)
 
