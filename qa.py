@@ -7,6 +7,9 @@ import streamlit as st
 from streamlit_chat import message as st_message
 import os
 
+os.environ["http_proxy"] = "http://127.0.0.1:7890"
+os.environ["https_proxy"] = "http://127.0.0.1:7890"
+
 # 构建回答
 def generate_answer(QA_module):
     user_message = st.session_state.input_text
