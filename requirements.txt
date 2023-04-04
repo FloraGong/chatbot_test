@@ -1,0 +1,6 @@
+langchain==0.0.130
+streamlit==1.20.0
+streamlit_chat==0.0.2.2
+unstructured
+chromadb
+nltk

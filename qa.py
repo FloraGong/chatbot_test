@@ -1,3 +1,4 @@
+import uuid
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
 from langchain.text_splitter import CharacterTextSplitter
@@ -86,10 +87,10 @@ if uploaded_file is not None and uploaded_file.name not in os.listdir("data"):
     # 构建回答
     st.text_input("Talk to the bot",
                   key="input_text",
-                  on_change=generate_answer(QA_module))
+                  on_change=generate_answer)
 
     for chat in st.session_state.history:
-        st_message(**chat)
+        st_message(**chat, key=str(uuid.uuid4()))
 
 elif uploaded_file is not None and uploaded_file.name in os.listdir("data"):
     st.write("File is existed.")
@@ -118,4 +119,4 @@ elif uploaded_file is not None and uploaded_file.name in os.listdir("data"):
                   on_change=generate_answer)
 
     for chat in st.session_state.history:
-        st_message(**chat)
+        st_message(**chat, key=str(uuid.uuid4()))
