@@ -1,6 +1,0 @@
-LangChain
-streamlit
-streamlit_chat
-unstructured
-chromadb
-nltk
