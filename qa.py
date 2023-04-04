@@ -29,9 +29,9 @@ def generate_answer():
 
 
 # 构建Streamlit 应用程序
-st.set_page_config(page_title="问答机器人", page_icon="👀")
+st.set_page_config(page_title="ChatBot", page_icon="👀")
 st.header("Chat With Your Document")
-st.write("您好！我是问答机器人。请问您有什么问题需要我回答吗？")
+st.write("Hello！I'm Chatbot. Do you hava any questions need I answer？")
 
 OpenAI_key = st.text_input('Input your OpenAI API Key here:')
 
